@@ -8,7 +8,7 @@
 	<title>JavaScript Maze Solver!</title>
 </head>
 <body>
-	<h1 id="title-text">Maze Solver!</h1>
+	<h1 id="title-text">Depth-First Search Maze Solver!</h1>
 	<p class="p-text" id="mode-view">Mode: wall select/delete</p>
 	<img src="info-icon.png" id="info-icon">
 	<ol class="p-text-hidden" id="instructions">
@@ -16,13 +16,13 @@
 		<li>Press the S key and then select the starting tile (green) with your mouse</li>
 		<li>Press the E key and then select the ending tile (orange) with your mouse</li>
 		<li>Press the escape key to return to the normal mode of creating/deleting walls</li>
-		<li>Press enter to have the computer solve the maze (path of solution will be white)!</li>
+		<li>Press enter to have the computer solve the maze!</li>
 		<li>Press the C key to clear all tiles</li>
+		<li>Note: DFS is not the optimal algorithm for solving a maze, so some solution paths will be strangely long &#129327;</li>
 	</ol>
-	<br>
-	<br>
-
-	<div id="maze-structure"></div>
+	<div style="display: flex; justify-content: center;">
+		<div id="maze-structure"></div>
+	</div>
 	<p id="ai-message" class="p-text" style="text-align: center;"></p>
 	<script type="text/javascript" src="DataStructures.js"></script>
 	<script type="text/javascript" src="MazeObjects.js"></script>
